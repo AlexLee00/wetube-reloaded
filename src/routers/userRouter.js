@@ -35,6 +35,6 @@ userRouter.get("/github/finish", publicOnlyMiddleware, finishGithubLogin);
 // userRouter.get("/kakaotalk/start", startKakaotalkLogin);
 // userRouter.get("/kakaotalk/finish", finishKakaotalkLogin);
 
-userRouter.get(":id", see);
+userRouter.get("/:id", see);
 
 export default userRouter;
